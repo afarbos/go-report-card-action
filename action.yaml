@@ -1,0 +1,15 @@
+name: 'Go Report Card'
+description: 'Run goreportcard-cli and update project Go report card on https://goreportcard.com'
+branding:
+  icon: 'check-circle'
+  color: 'green'
+inputs:
+  threshold:
+    description: 'Threshold of failure command'
+    required: true
+    default: '75'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.threshold }}
