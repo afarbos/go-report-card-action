@@ -10,10 +10,12 @@ Github action calling goreportcard-cli and refresh your card on https://goreport
 
 ## Example usage
 
-uses: actions/go-report-card-action@v1
+```
+uses: afarbos/go-report-card-action@v1
 with:
   threshold: '100'
-  
+```
+
 ## Note
 
 inspired by https://github.com/creekorful/goreportcard-action
